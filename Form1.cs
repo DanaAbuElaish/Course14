@@ -51,6 +51,11 @@ namespace Course14
         {
             textBox1.Visible = true;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.Red;
+        }
     }
 }
 
