@@ -67,7 +67,10 @@ namespace Course14
         
         }
 
-       
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Text = "Koko";
+        }
     }
 }
 
