@@ -36,6 +36,11 @@ namespace Course14
         {
             textBox1.Enabled = false;
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox1.Enabled = true;
+        }
     }
 }
 
