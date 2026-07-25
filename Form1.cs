@@ -43,7 +43,7 @@ namespace Course14
         private void button4_Click(object sender, EventArgs e)
         {
             textBox1.Enabled = true;
-            button1.Enabled = true; 
+            button1 .Enabled = true; 
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -79,6 +79,16 @@ namespace Course14
         private void button10_Click(object sender, EventArgs e)
         {
             label1.Text = "Dana Abu Elaish";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
