@@ -56,6 +56,13 @@ namespace Course14
         {
             textBox1.BackColor = Color.Red;
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.White;
+        }
+
+       
     }
 }
 
