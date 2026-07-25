@@ -22,9 +22,10 @@ namespace Course14
             textBox2.Text = textBox1.Text;
         }
 
-        private void Mouse_Enter(object sender, EventArgs e)
+       
+        private void Form1_Load(object sender, EventArgs e)
         {
-            textBox2.Text = textBox1.Text;
+
         }
     }
 }
