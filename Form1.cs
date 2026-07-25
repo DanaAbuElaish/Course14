@@ -29,7 +29,9 @@ namespace Course14
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            textBox2.Text = textBox1.Text; 
+            textBox2.Text = textBox1.Text;
+            
+            label1.Text= textBox1.Text;
         }
 
         private void button3_Click(object sender, EventArgs e)
