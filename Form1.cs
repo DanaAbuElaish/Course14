@@ -71,6 +71,11 @@ namespace Course14
         {
             this.Text = "Koko";
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Dana Abu Elaish";
+        }
     }
 }
 
