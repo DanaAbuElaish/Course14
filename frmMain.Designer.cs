@@ -59,7 +59,7 @@
             this.btnMessageBoxForm.Name = "btnMessageBoxForm";
             this.btnMessageBoxForm.Size = new System.Drawing.Size(129, 70);
             this.btnMessageBoxForm.TabIndex = 2;
-            this.btnMessageBoxForm.Text = "Show Form as Dialog";
+            this.btnMessageBoxForm.Text = "Show Message Box Form";
             this.btnMessageBoxForm.UseVisualStyleBackColor = true;
             this.btnMessageBoxForm.Click += new System.EventHandler(this.btnMessageBoxForm_Click);
             // 
