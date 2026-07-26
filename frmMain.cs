@@ -33,5 +33,11 @@ namespace Course14
             Form frm1 = new Form1();
             frm1.ShowDialog();
         }
+
+        private void btnMessageBoxForm_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmMessageBox();
+            frm1.ShowDialog();
+        }
     }
 }

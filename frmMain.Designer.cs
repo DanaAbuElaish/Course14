@@ -30,6 +30,7 @@
         {
             this.btnShowPart1 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnMessageBoxForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowPart1
@@ -52,11 +53,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnMessageBoxForm
+            // 
+            this.btnMessageBoxForm.Location = new System.Drawing.Point(276, 76);
+            this.btnMessageBoxForm.Name = "btnMessageBoxForm";
+            this.btnMessageBoxForm.Size = new System.Drawing.Size(129, 70);
+            this.btnMessageBoxForm.TabIndex = 2;
+            this.btnMessageBoxForm.Text = "Show Form as Dialog";
+            this.btnMessageBoxForm.UseVisualStyleBackColor = true;
+            this.btnMessageBoxForm.Click += new System.EventHandler(this.btnMessageBoxForm_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMessageBoxForm);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnShowPart1);
             this.Name = "frmMain";
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.Button btnShowPart1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMessageBoxForm;
     }
 }
