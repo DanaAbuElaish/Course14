@@ -26,5 +26,10 @@ namespace Course14
         {
             button1.Enabled = chkRecieveEmails.Checked;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(rbSmall.Checked.ToString());
+        }
     }
 }
