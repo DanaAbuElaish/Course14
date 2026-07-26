@@ -36,5 +36,14 @@ namespace Course14
             }
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are You Sure?", "Confirm", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                //do something
+                MessageBox.Show("User Pressed Ok");
+            }
+        }
     }
 }
