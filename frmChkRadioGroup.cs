@@ -31,5 +31,11 @@ namespace Course14
         {
             MessageBox.Show(rbSmall.Checked.ToString());
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //gbSize.Visible = false;
+            gbSize.Enabled = false;
+        }
     }
 }
