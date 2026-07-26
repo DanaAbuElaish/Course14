@@ -27,6 +27,9 @@ namespace Course14
             MessageBox.Show("Hi this is a message!", "This is a title KOKO");
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hi this is a message!", "This is a title KOKO", MessageBoxButtons.OKCancel);
+        }
     }
 }

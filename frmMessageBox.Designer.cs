@@ -55,13 +55,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(25, 200);
+            this.button3.Location = new System.Drawing.Point(25, 191);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 70);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Show Message With Title";
+            this.button3.Text = "Show Message With Title and  buttons";
             this.button3.UseVisualStyleBackColor = true;
-           
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // frmMessageBox
             // 
