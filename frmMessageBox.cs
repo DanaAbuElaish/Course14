@@ -29,7 +29,12 @@ namespace Course14
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hi this is a message!", "This is a title KOKO", MessageBoxButtons.OKCancel);
+            if (MessageBox.Show("Are You Sure?", "Confirm", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                //do something
+                MessageBox.Show("User Pressed Ok");
+            }
+
         }
     }
 }
