@@ -48,23 +48,27 @@
             this.radioButtonEatIn = new System.Windows.Forms.RadioButton();
             this.btnOrderPizza = new System.Windows.Forms.Button();
             this.btnEsetForm = new System.Windows.Forms.Button();
+            this.groupBoxOrderSummary = new System.Windows.Forms.GroupBox();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
             this.lblWhereToEat = new System.Windows.Forms.Label();
             this.lblCrustType = new System.Windows.Forms.Label();
             this.lblToppings = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
             this.groupBoxWhereToEat.SuspendLayout();
+            this.groupBoxOrderSummary.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMakeYourPizza
             // 
             this.lblMakeYourPizza.AutoSize = true;
-            this.lblMakeYourPizza.Location = new System.Drawing.Point(303, 33);
+            this.lblMakeYourPizza.Font = new System.Drawing.Font("Georgia", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMakeYourPizza.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblMakeYourPizza.Location = new System.Drawing.Point(173, 19);
             this.lblMakeYourPizza.Name = "lblMakeYourPizza";
-            this.lblMakeYourPizza.Size = new System.Drawing.Size(107, 16);
+            this.lblMakeYourPizza.Size = new System.Drawing.Size(546, 69);
             this.lblMakeYourPizza.TabIndex = 3;
             this.lblMakeYourPizza.Text = "Make Your Pizza";
             // 
@@ -272,61 +276,75 @@
             this.btnEsetForm.Text = "Reset Form";
             this.btnEsetForm.UseVisualStyleBackColor = true;
             // 
+            // groupBoxOrderSummary
+            // 
+            this.groupBoxOrderSummary.Controls.Add(this.lblTotalPrice);
+            this.groupBoxOrderSummary.Controls.Add(this.lblWhereToEat);
+            this.groupBoxOrderSummary.Controls.Add(this.lblCrustType);
+            this.groupBoxOrderSummary.Controls.Add(this.lblToppings);
+            this.groupBoxOrderSummary.Controls.Add(this.lblSize);
+            this.groupBoxOrderSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxOrderSummary.Location = new System.Drawing.Point(635, 111);
+            this.groupBoxOrderSummary.Name = "groupBoxOrderSummary";
+            this.groupBoxOrderSummary.Size = new System.Drawing.Size(200, 220);
+            this.groupBoxOrderSummary.TabIndex = 32;
+            this.groupBoxOrderSummary.TabStop = false;
+            this.groupBoxOrderSummary.Text = "Order Summary";
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(25, 171);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(95, 16);
+            this.lblTotalPrice.TabIndex = 36;
+            this.lblTotalPrice.Text = "Total Price : ";
+            // 
             // lblWhereToEat
             // 
             this.lblWhereToEat.AutoSize = true;
-            this.lblWhereToEat.Location = new System.Drawing.Point(701, 235);
+            this.lblWhereToEat.Location = new System.Drawing.Point(25, 139);
             this.lblWhereToEat.Name = "lblWhereToEat";
-            this.lblWhereToEat.Size = new System.Drawing.Size(93, 16);
-            this.lblWhereToEat.TabIndex = 30;
+            this.lblWhereToEat.Size = new System.Drawing.Size(108, 16);
+            this.lblWhereToEat.TabIndex = 35;
             this.lblWhereToEat.Text = "Where to Eat : ";
             // 
             // lblCrustType
             // 
             this.lblCrustType.AutoSize = true;
-            this.lblCrustType.Location = new System.Drawing.Point(699, 194);
+            this.lblCrustType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCrustType.Location = new System.Drawing.Point(25, 102);
             this.lblCrustType.Name = "lblCrustType";
-            this.lblCrustType.Size = new System.Drawing.Size(81, 16);
-            this.lblCrustType.TabIndex = 29;
+            this.lblCrustType.Size = new System.Drawing.Size(94, 16);
+            this.lblCrustType.TabIndex = 34;
             this.lblCrustType.Text = "Crust Type : ";
             // 
             // lblToppings
             // 
             this.lblToppings.AutoSize = true;
-            this.lblToppings.Location = new System.Drawing.Point(699, 147);
+            this.lblToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblToppings.Location = new System.Drawing.Point(25, 63);
             this.lblToppings.Name = "lblToppings";
-            this.lblToppings.Size = new System.Drawing.Size(74, 16);
-            this.lblToppings.TabIndex = 28;
+            this.lblToppings.Size = new System.Drawing.Size(85, 16);
+            this.lblToppings.TabIndex = 33;
             this.lblToppings.Text = "Toppings : ";
             // 
             // lblSize
             // 
             this.lblSize.AutoSize = true;
-            this.lblSize.Location = new System.Drawing.Point(699, 111);
+            this.lblSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSize.Location = new System.Drawing.Point(25, 29);
             this.lblSize.Name = "lblSize";
-            this.lblSize.Size = new System.Drawing.Size(42, 16);
-            this.lblSize.TabIndex = 27;
+            this.lblSize.Size = new System.Drawing.Size(49, 16);
+            this.lblSize.TabIndex = 32;
             this.lblSize.Text = "Size : ";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Location = new System.Drawing.Point(701, 276);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(81, 16);
-            this.lblTotalPrice.TabIndex = 31;
-            this.lblTotalPrice.Text = "Total Price : ";
             // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(872, 450);
-            this.Controls.Add(this.lblTotalPrice);
-            this.Controls.Add(this.lblWhereToEat);
-            this.Controls.Add(this.lblCrustType);
-            this.Controls.Add(this.lblToppings);
-            this.Controls.Add(this.lblSize);
+            this.Controls.Add(this.groupBoxOrderSummary);
             this.Controls.Add(this.btnEsetForm);
             this.Controls.Add(this.btnOrderPizza);
             this.Controls.Add(this.groupBoxWhereToEat);
@@ -344,6 +362,8 @@
             this.groupBoxToppings.PerformLayout();
             this.groupBoxWhereToEat.ResumeLayout(false);
             this.groupBoxWhereToEat.PerformLayout();
+            this.groupBoxOrderSummary.ResumeLayout(false);
+            this.groupBoxOrderSummary.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -370,10 +390,11 @@
         private System.Windows.Forms.RadioButton radioButtonEatIn;
         private System.Windows.Forms.Button btnOrderPizza;
         private System.Windows.Forms.Button btnEsetForm;
+        private System.Windows.Forms.GroupBox groupBoxOrderSummary;
+        private System.Windows.Forms.Label lblTotalPrice;
         private System.Windows.Forms.Label lblWhereToEat;
         private System.Windows.Forms.Label lblCrustType;
         private System.Windows.Forms.Label lblToppings;
         private System.Windows.Forms.Label lblSize;
-        private System.Windows.Forms.Label lblTotalPrice;
     }
 }
