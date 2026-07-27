@@ -43,6 +43,8 @@
             this.checkBoxOlives = new System.Windows.Forms.CheckBox();
             this.checkBoxOnion = new System.Windows.Forms.CheckBox();
             this.checkBoxTomatoes = new System.Windows.Forms.CheckBox();
+            this.rbEatIn = new System.Windows.Forms.RadioButton();
+            this.rbResetForm = new System.Windows.Forms.RadioButton();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
@@ -210,11 +212,35 @@
             this.checkBoxTomatoes.Text = "Tomatoes";
             this.checkBoxTomatoes.UseVisualStyleBackColor = true;
             // 
+            // rbEatIn
+            // 
+            this.rbEatIn.AutoSize = true;
+            this.rbEatIn.Location = new System.Drawing.Point(313, 345);
+            this.rbEatIn.Name = "rbEatIn";
+            this.rbEatIn.Size = new System.Drawing.Size(61, 20);
+            this.rbEatIn.TabIndex = 18;
+            this.rbEatIn.TabStop = true;
+            this.rbEatIn.Text = "Eat In";
+            this.rbEatIn.UseVisualStyleBackColor = true;
+            // 
+            // rbResetForm
+            // 
+            this.rbResetForm.AutoSize = true;
+            this.rbResetForm.Location = new System.Drawing.Point(429, 345);
+            this.rbResetForm.Name = "rbResetForm";
+            this.rbResetForm.Size = new System.Drawing.Size(98, 20);
+            this.rbResetForm.TabIndex = 19;
+            this.rbResetForm.TabStop = true;
+            this.rbResetForm.Text = "Reset Form";
+            this.rbResetForm.UseVisualStyleBackColor = true;
+            // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 450);
+            this.Controls.Add(this.rbResetForm);
+            this.Controls.Add(this.rbEatIn);
             this.Controls.Add(this.groupBoxToppings);
             this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbSize);
@@ -248,5 +274,7 @@
         private System.Windows.Forms.CheckBox checkBoxTomatoes;
         private System.Windows.Forms.CheckBox checkBoxMushrooms;
         private System.Windows.Forms.CheckBox checkBoxExtraCheese;
+        private System.Windows.Forms.RadioButton rbEatIn;
+        private System.Windows.Forms.RadioButton rbResetForm;
     }
 }
