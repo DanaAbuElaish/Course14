@@ -46,6 +46,8 @@
             this.groupBoxWhereToEat = new System.Windows.Forms.GroupBox();
             this.radioButtonResetForm = new System.Windows.Forms.RadioButton();
             this.radioButtonEatIn = new System.Windows.Forms.RadioButton();
+            this.btnOrderPizza = new System.Windows.Forms.Button();
+            this.btnEsetForm = new System.Windows.Forms.Button();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
@@ -247,11 +249,31 @@
             this.radioButtonEatIn.Text = "Eat In";
             this.radioButtonEatIn.UseVisualStyleBackColor = true;
             // 
+            // btnOrderPizza
+            // 
+            this.btnOrderPizza.Location = new System.Drawing.Point(317, 383);
+            this.btnOrderPizza.Name = "btnOrderPizza";
+            this.btnOrderPizza.Size = new System.Drawing.Size(109, 39);
+            this.btnOrderPizza.TabIndex = 21;
+            this.btnOrderPizza.Text = "Order Pizza";
+            this.btnOrderPizza.UseVisualStyleBackColor = true;
+            // 
+            // btnEsetForm
+            // 
+            this.btnEsetForm.Location = new System.Drawing.Point(458, 383);
+            this.btnEsetForm.Name = "btnEsetForm";
+            this.btnEsetForm.Size = new System.Drawing.Size(109, 39);
+            this.btnEsetForm.TabIndex = 22;
+            this.btnEsetForm.Text = "Reset Form";
+            this.btnEsetForm.UseVisualStyleBackColor = true;
+            // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 450);
+            this.ClientSize = new System.Drawing.Size(872, 450);
+            this.Controls.Add(this.btnEsetForm);
+            this.Controls.Add(this.btnOrderPizza);
             this.Controls.Add(this.groupBoxWhereToEat);
             this.Controls.Add(this.groupBoxToppings);
             this.Controls.Add(this.gbCrustType);
@@ -291,5 +313,7 @@
         private System.Windows.Forms.GroupBox groupBoxWhereToEat;
         private System.Windows.Forms.RadioButton radioButtonResetForm;
         private System.Windows.Forms.RadioButton radioButtonEatIn;
+        private System.Windows.Forms.Button btnOrderPizza;
+        private System.Windows.Forms.Button btnEsetForm;
     }
 }
