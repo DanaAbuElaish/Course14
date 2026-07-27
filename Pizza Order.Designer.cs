@@ -33,8 +33,8 @@
             this.rbMeduim = new System.Windows.Forms.RadioButton();
             this.rbLarge = new System.Windows.Forms.RadioButton();
             this.gbSize = new System.Windows.Forms.GroupBox();
-            this.rbThinCust = new System.Windows.Forms.RadioButton();
-            this.rbThinkCust = new System.Windows.Forms.RadioButton();
+            this.rbThinCrust = new System.Windows.Forms.RadioButton();
+            this.rbThinkCrust = new System.Windows.Forms.RadioButton();
             this.gbSize.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -92,35 +92,35 @@
             this.gbSize.TabStop = false;
             this.gbSize.Text = "Size";
             // 
-            // rbThinCust
+            // rbThinCrust
             // 
-            this.rbThinCust.AutoSize = true;
-            this.rbThinCust.Location = new System.Drawing.Point(83, 329);
-            this.rbThinCust.Name = "rbThinCust";
-            this.rbThinCust.Size = new System.Drawing.Size(83, 20);
-            this.rbThinCust.TabIndex = 10;
-            this.rbThinCust.TabStop = true;
-            this.rbThinCust.Text = "Thin Cust";
-            this.rbThinCust.UseVisualStyleBackColor = true;
+            this.rbThinCrust.AutoSize = true;
+            this.rbThinCrust.Location = new System.Drawing.Point(83, 329);
+            this.rbThinCrust.Name = "rbThinCrust";
+            this.rbThinCrust.Size = new System.Drawing.Size(87, 20);
+            this.rbThinCrust.TabIndex = 10;
+            this.rbThinCrust.TabStop = true;
+            this.rbThinCrust.Text = "Thin Crust";
+            this.rbThinCrust.UseVisualStyleBackColor = true;
             // 
-            // rbThinkCust
+            // rbThinkCrust
             // 
-            this.rbThinkCust.AutoSize = true;
-            this.rbThinkCust.Location = new System.Drawing.Point(83, 355);
-            this.rbThinkCust.Name = "rbThinkCust";
-            this.rbThinkCust.Size = new System.Drawing.Size(90, 20);
-            this.rbThinkCust.TabIndex = 11;
-            this.rbThinkCust.TabStop = true;
-            this.rbThinkCust.Text = "Think Cust";
-            this.rbThinkCust.UseVisualStyleBackColor = true;
+            this.rbThinkCrust.AutoSize = true;
+            this.rbThinkCrust.Location = new System.Drawing.Point(83, 355);
+            this.rbThinkCrust.Name = "rbThinkCrust";
+            this.rbThinkCrust.Size = new System.Drawing.Size(94, 20);
+            this.rbThinkCrust.TabIndex = 11;
+            this.rbThinkCrust.TabStop = true;
+            this.rbThinkCrust.Text = "Think Crust";
+            this.rbThinkCrust.UseVisualStyleBackColor = true;
             // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rbThinkCust);
-            this.Controls.Add(this.rbThinCust);
+            this.Controls.Add(this.rbThinkCrust);
+            this.Controls.Add(this.rbThinCrust);
             this.Controls.Add(this.gbSize);
             this.Controls.Add(this.lblMakeYourPizza);
             this.Name = "Pizza_Order";
@@ -138,7 +138,7 @@
         private System.Windows.Forms.RadioButton rbMeduim;
         private System.Windows.Forms.RadioButton rbLarge;
         private System.Windows.Forms.GroupBox gbSize;
-        private System.Windows.Forms.RadioButton rbThinCust;
-        private System.Windows.Forms.RadioButton rbThinkCust;
+        private System.Windows.Forms.RadioButton rbThinCrust;
+        private System.Windows.Forms.RadioButton rbThinkCrust;
     }
 }
