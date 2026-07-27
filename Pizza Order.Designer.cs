@@ -43,11 +43,13 @@
             this.checkBoxOlives = new System.Windows.Forms.CheckBox();
             this.checkBoxOnion = new System.Windows.Forms.CheckBox();
             this.checkBoxTomatoes = new System.Windows.Forms.CheckBox();
-            this.rbEatIn = new System.Windows.Forms.RadioButton();
-            this.rbResetForm = new System.Windows.Forms.RadioButton();
+            this.groupBoxWhereToEat = new System.Windows.Forms.GroupBox();
+            this.radioButtonResetForm = new System.Windows.Forms.RadioButton();
+            this.radioButtonEatIn = new System.Windows.Forms.RadioButton();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
+            this.groupBoxWhereToEat.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMakeYourPizza
@@ -212,35 +214,45 @@
             this.checkBoxTomatoes.Text = "Tomatoes";
             this.checkBoxTomatoes.UseVisualStyleBackColor = true;
             // 
-            // rbEatIn
+            // groupBoxWhereToEat
             // 
-            this.rbEatIn.AutoSize = true;
-            this.rbEatIn.Location = new System.Drawing.Point(313, 345);
-            this.rbEatIn.Name = "rbEatIn";
-            this.rbEatIn.Size = new System.Drawing.Size(61, 20);
-            this.rbEatIn.TabIndex = 18;
-            this.rbEatIn.TabStop = true;
-            this.rbEatIn.Text = "Eat In";
-            this.rbEatIn.UseVisualStyleBackColor = true;
+            this.groupBoxWhereToEat.Controls.Add(this.radioButtonResetForm);
+            this.groupBoxWhereToEat.Controls.Add(this.radioButtonEatIn);
+            this.groupBoxWhereToEat.Location = new System.Drawing.Point(306, 276);
+            this.groupBoxWhereToEat.Name = "groupBoxWhereToEat";
+            this.groupBoxWhereToEat.Size = new System.Drawing.Size(223, 74);
+            this.groupBoxWhereToEat.TabIndex = 20;
+            this.groupBoxWhereToEat.TabStop = false;
+            this.groupBoxWhereToEat.Text = "Where To Eat";
             // 
-            // rbResetForm
+            // radioButtonResetForm
             // 
-            this.rbResetForm.AutoSize = true;
-            this.rbResetForm.Location = new System.Drawing.Point(429, 345);
-            this.rbResetForm.Name = "rbResetForm";
-            this.rbResetForm.Size = new System.Drawing.Size(98, 20);
-            this.rbResetForm.TabIndex = 19;
-            this.rbResetForm.TabStop = true;
-            this.rbResetForm.Text = "Reset Form";
-            this.rbResetForm.UseVisualStyleBackColor = true;
+            this.radioButtonResetForm.AutoSize = true;
+            this.radioButtonResetForm.Location = new System.Drawing.Point(107, 35);
+            this.radioButtonResetForm.Name = "radioButtonResetForm";
+            this.radioButtonResetForm.Size = new System.Drawing.Size(98, 20);
+            this.radioButtonResetForm.TabIndex = 21;
+            this.radioButtonResetForm.TabStop = true;
+            this.radioButtonResetForm.Text = "Reset Form";
+            this.radioButtonResetForm.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonEatIn
+            // 
+            this.radioButtonEatIn.AutoSize = true;
+            this.radioButtonEatIn.Location = new System.Drawing.Point(11, 35);
+            this.radioButtonEatIn.Name = "radioButtonEatIn";
+            this.radioButtonEatIn.Size = new System.Drawing.Size(61, 20);
+            this.radioButtonEatIn.TabIndex = 20;
+            this.radioButtonEatIn.TabStop = true;
+            this.radioButtonEatIn.Text = "Eat In";
+            this.radioButtonEatIn.UseVisualStyleBackColor = true;
             // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 450);
-            this.Controls.Add(this.rbResetForm);
-            this.Controls.Add(this.rbEatIn);
+            this.Controls.Add(this.groupBoxWhereToEat);
             this.Controls.Add(this.groupBoxToppings);
             this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbSize);
@@ -253,6 +265,8 @@
             this.gbCrustType.PerformLayout();
             this.groupBoxToppings.ResumeLayout(false);
             this.groupBoxToppings.PerformLayout();
+            this.groupBoxWhereToEat.ResumeLayout(false);
+            this.groupBoxWhereToEat.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,7 +288,8 @@
         private System.Windows.Forms.CheckBox checkBoxTomatoes;
         private System.Windows.Forms.CheckBox checkBoxMushrooms;
         private System.Windows.Forms.CheckBox checkBoxExtraCheese;
-        private System.Windows.Forms.RadioButton rbEatIn;
-        private System.Windows.Forms.RadioButton rbResetForm;
+        private System.Windows.Forms.GroupBox groupBoxWhereToEat;
+        private System.Windows.Forms.RadioButton radioButtonResetForm;
+        private System.Windows.Forms.RadioButton radioButtonEatIn;
     }
 }
