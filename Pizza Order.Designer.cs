@@ -36,6 +36,12 @@
             this.rbThinCrust = new System.Windows.Forms.RadioButton();
             this.rbThinkCrust = new System.Windows.Forms.RadioButton();
             this.gbCrustType = new System.Windows.Forms.GroupBox();
+            this.checkBoxExtraCheese = new System.Windows.Forms.CheckBox();
+            this.checkBoxMushrooms = new System.Windows.Forms.CheckBox();
+            this.checkBoxTomatoes = new System.Windows.Forms.CheckBox();
+            this.checkBoxOnion = new System.Windows.Forms.CheckBox();
+            this.checkBoxOlives = new System.Windows.Forms.CheckBox();
+            this.checkBoxGreenPeppers = new System.Windows.Forms.CheckBox();
             this.gbSize.SuspendLayout();
             this.gbCrustType.SuspendLayout();
             this.SuspendLayout();
@@ -120,18 +126,84 @@
             // 
             this.gbCrustType.Controls.Add(this.rbThinCrust);
             this.gbCrustType.Controls.Add(this.rbThinkCrust);
-            this.gbCrustType.Location = new System.Drawing.Point(37, 276);
+            this.gbCrustType.Location = new System.Drawing.Point(27, 276);
             this.gbCrustType.Name = "gbCrustType";
             this.gbCrustType.Size = new System.Drawing.Size(152, 146);
             this.gbCrustType.TabIndex = 10;
             this.gbCrustType.TabStop = false;
             this.gbCrustType.Text = "Crust Type";
             // 
+            // checkBoxExtraCheese
+            // 
+            this.checkBoxExtraCheese.AutoSize = true;
+            this.checkBoxExtraCheese.Location = new System.Drawing.Point(295, 135);
+            this.checkBoxExtraCheese.Name = "checkBoxExtraCheese";
+            this.checkBoxExtraCheese.Size = new System.Drawing.Size(109, 20);
+            this.checkBoxExtraCheese.TabIndex = 11;
+            this.checkBoxExtraCheese.Text = "Extra Cheese";
+            this.checkBoxExtraCheese.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxMushrooms
+            // 
+            this.checkBoxMushrooms.AutoSize = true;
+            this.checkBoxMushrooms.Location = new System.Drawing.Point(295, 174);
+            this.checkBoxMushrooms.Name = "checkBoxMushrooms";
+            this.checkBoxMushrooms.Size = new System.Drawing.Size(99, 20);
+            this.checkBoxMushrooms.TabIndex = 12;
+            this.checkBoxMushrooms.Text = "Mushrooms";
+            this.checkBoxMushrooms.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxTomatoes
+            // 
+            this.checkBoxTomatoes.AutoSize = true;
+            this.checkBoxTomatoes.Location = new System.Drawing.Point(295, 212);
+            this.checkBoxTomatoes.Name = "checkBoxTomatoes";
+            this.checkBoxTomatoes.Size = new System.Drawing.Size(91, 20);
+            this.checkBoxTomatoes.TabIndex = 13;
+            this.checkBoxTomatoes.Text = "Tomatoes";
+            this.checkBoxTomatoes.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOnion
+            // 
+            this.checkBoxOnion.AutoSize = true;
+            this.checkBoxOnion.Location = new System.Drawing.Point(431, 134);
+            this.checkBoxOnion.Name = "checkBoxOnion";
+            this.checkBoxOnion.Size = new System.Drawing.Size(64, 20);
+            this.checkBoxOnion.TabIndex = 14;
+            this.checkBoxOnion.Text = "Onion";
+            this.checkBoxOnion.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxOlives
+            // 
+            this.checkBoxOlives.AutoSize = true;
+            this.checkBoxOlives.Location = new System.Drawing.Point(431, 174);
+            this.checkBoxOlives.Name = "checkBoxOlives";
+            this.checkBoxOlives.Size = new System.Drawing.Size(67, 20);
+            this.checkBoxOlives.TabIndex = 15;
+            this.checkBoxOlives.Text = "Olives";
+            this.checkBoxOlives.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxGreenPeppers
+            // 
+            this.checkBoxGreenPeppers.AutoSize = true;
+            this.checkBoxGreenPeppers.Location = new System.Drawing.Point(431, 212);
+            this.checkBoxGreenPeppers.Name = "checkBoxGreenPeppers";
+            this.checkBoxGreenPeppers.Size = new System.Drawing.Size(121, 20);
+            this.checkBoxGreenPeppers.TabIndex = 16;
+            this.checkBoxGreenPeppers.Text = "Green Peppers";
+            this.checkBoxGreenPeppers.UseVisualStyleBackColor = true;
+            // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(855, 450);
+            this.Controls.Add(this.checkBoxGreenPeppers);
+            this.Controls.Add(this.checkBoxOlives);
+            this.Controls.Add(this.checkBoxOnion);
+            this.Controls.Add(this.checkBoxTomatoes);
+            this.Controls.Add(this.checkBoxMushrooms);
+            this.Controls.Add(this.checkBoxExtraCheese);
             this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbSize);
             this.Controls.Add(this.lblMakeYourPizza);
@@ -155,5 +227,11 @@
         private System.Windows.Forms.RadioButton rbThinCrust;
         private System.Windows.Forms.RadioButton rbThinkCrust;
         private System.Windows.Forms.GroupBox gbCrustType;
+        private System.Windows.Forms.CheckBox checkBoxExtraCheese;
+        private System.Windows.Forms.CheckBox checkBoxMushrooms;
+        private System.Windows.Forms.CheckBox checkBoxTomatoes;
+        private System.Windows.Forms.CheckBox checkBoxOnion;
+        private System.Windows.Forms.CheckBox checkBoxOlives;
+        private System.Windows.Forms.CheckBox checkBoxGreenPeppers;
     }
 }
