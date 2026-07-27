@@ -87,9 +87,9 @@ namespace Course14
 
         private void rbThinkCrust_CheckedChanged(object sender, EventArgs e)
         {
-            if (rbThinkCrust.Checked)
+            if (rbThickCrust.Checked)
             {
-                lblCrustTypeOnOrderSummary.Text = rbThinkCrust.Text;
+                lblCrustTypeOnOrderSummary.Text = rbThickCrust.Text;
                 CalculatePrice();
             }
         }
@@ -166,7 +166,7 @@ namespace Course14
             if (rbThinCrust.Checked)
             {
                 price += 5;
-            }else if (rbThinkCrust.Checked)
+            }else if (rbThickCrust.Checked)
             {
                 price += 10;
             }

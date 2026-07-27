@@ -34,7 +34,7 @@
             this.rbLarge = new System.Windows.Forms.RadioButton();
             this.groupBoxSize = new System.Windows.Forms.GroupBox();
             this.rbThinCrust = new System.Windows.Forms.RadioButton();
-            this.rbThinkCrust = new System.Windows.Forms.RadioButton();
+            this.rbThickCrust = new System.Windows.Forms.RadioButton();
             this.groupBoxCrustType = new System.Windows.Forms.GroupBox();
             this.groupBoxToppings = new System.Windows.Forms.GroupBox();
             this.checkBoxGreenPeppers = new System.Windows.Forms.CheckBox();
@@ -137,22 +137,22 @@
             this.rbThinCrust.UseVisualStyleBackColor = true;
             this.rbThinCrust.CheckedChanged += new System.EventHandler(this.rbThinCrust_CheckedChanged);
             // 
-            // rbThinkCrust
+            // rbThickCrust
             // 
-            this.rbThinkCrust.AutoSize = true;
-            this.rbThinkCrust.Location = new System.Drawing.Point(32, 80);
-            this.rbThinkCrust.Name = "rbThinkCrust";
-            this.rbThinkCrust.Size = new System.Drawing.Size(94, 20);
-            this.rbThinkCrust.TabIndex = 11;
-            this.rbThinkCrust.TabStop = true;
-            this.rbThinkCrust.Text = "Think Crust";
-            this.rbThinkCrust.UseVisualStyleBackColor = true;
-            this.rbThinkCrust.CheckedChanged += new System.EventHandler(this.rbThinkCrust_CheckedChanged);
+            this.rbThickCrust.AutoSize = true;
+            this.rbThickCrust.Location = new System.Drawing.Point(32, 80);
+            this.rbThickCrust.Name = "rbThickCrust";
+            this.rbThickCrust.Size = new System.Drawing.Size(94, 20);
+            this.rbThickCrust.TabIndex = 11;
+            this.rbThickCrust.TabStop = true;
+            this.rbThickCrust.Text = "Thick Crust";
+            this.rbThickCrust.UseVisualStyleBackColor = true;
+            this.rbThickCrust.CheckedChanged += new System.EventHandler(this.rbThinkCrust_CheckedChanged);
             // 
             // groupBoxCrustType
             // 
             this.groupBoxCrustType.Controls.Add(this.rbThinCrust);
-            this.groupBoxCrustType.Controls.Add(this.rbThinkCrust);
+            this.groupBoxCrustType.Controls.Add(this.rbThickCrust);
             this.groupBoxCrustType.Location = new System.Drawing.Point(27, 276);
             this.groupBoxCrustType.Name = "groupBoxCrustType";
             this.groupBoxCrustType.Size = new System.Drawing.Size(152, 146);
@@ -453,7 +453,7 @@
         private System.Windows.Forms.RadioButton rbLarge;
         private System.Windows.Forms.GroupBox groupBoxSize;
         private System.Windows.Forms.RadioButton rbThinCrust;
-        private System.Windows.Forms.RadioButton rbThinkCrust;
+        private System.Windows.Forms.RadioButton rbThickCrust;
         private System.Windows.Forms.GroupBox groupBoxCrustType;
         private System.Windows.Forms.GroupBox groupBoxToppings;
         private System.Windows.Forms.CheckBox checkBoxGreenPeppers;
