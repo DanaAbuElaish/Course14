@@ -32,6 +32,8 @@
             this.rbSmall = new System.Windows.Forms.RadioButton();
             this.rbMeduim = new System.Windows.Forms.RadioButton();
             this.rbLarge = new System.Windows.Forms.RadioButton();
+            this.gbSize = new System.Windows.Forms.GroupBox();
+            this.gbSize.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMakeYourPizza
@@ -46,7 +48,7 @@
             // rbSmall
             // 
             this.rbSmall.AutoSize = true;
-            this.rbSmall.Location = new System.Drawing.Point(54, 110);
+            this.rbSmall.Location = new System.Drawing.Point(42, 31);
             this.rbSmall.Name = "rbSmall";
             this.rbSmall.Size = new System.Drawing.Size(62, 20);
             this.rbSmall.TabIndex = 5;
@@ -57,7 +59,7 @@
             // rbMeduim
             // 
             this.rbMeduim.AutoSize = true;
-            this.rbMeduim.Location = new System.Drawing.Point(54, 149);
+            this.rbMeduim.Location = new System.Drawing.Point(42, 71);
             this.rbMeduim.Name = "rbMeduim";
             this.rbMeduim.Size = new System.Drawing.Size(76, 20);
             this.rbMeduim.TabIndex = 6;
@@ -68,7 +70,7 @@
             // rbLarge
             // 
             this.rbLarge.AutoSize = true;
-            this.rbLarge.Location = new System.Drawing.Point(54, 188);
+            this.rbLarge.Location = new System.Drawing.Point(42, 109);
             this.rbLarge.Name = "rbLarge";
             this.rbLarge.Size = new System.Drawing.Size(63, 20);
             this.rbLarge.TabIndex = 7;
@@ -76,17 +78,29 @@
             this.rbLarge.Text = "Large";
             this.rbLarge.UseVisualStyleBackColor = true;
             // 
+            // gbSize
+            // 
+            this.gbSize.Controls.Add(this.rbSmall);
+            this.gbSize.Controls.Add(this.rbLarge);
+            this.gbSize.Controls.Add(this.rbMeduim);
+            this.gbSize.Location = new System.Drawing.Point(27, 103);
+            this.gbSize.Name = "gbSize";
+            this.gbSize.Size = new System.Drawing.Size(152, 146);
+            this.gbSize.TabIndex = 9;
+            this.gbSize.TabStop = false;
+            this.gbSize.Text = "Size";
+            // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rbLarge);
-            this.Controls.Add(this.rbMeduim);
-            this.Controls.Add(this.rbSmall);
+            this.Controls.Add(this.gbSize);
             this.Controls.Add(this.lblMakeYourPizza);
             this.Name = "Pizza_Order";
             this.Text = "Pizza Order";
+            this.gbSize.ResumeLayout(false);
+            this.gbSize.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -97,5 +111,6 @@
         private System.Windows.Forms.RadioButton rbSmall;
         private System.Windows.Forms.RadioButton rbMeduim;
         private System.Windows.Forms.RadioButton rbLarge;
+        private System.Windows.Forms.GroupBox gbSize;
     }
 }
