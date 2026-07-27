@@ -35,7 +35,9 @@
             this.gbSize = new System.Windows.Forms.GroupBox();
             this.rbThinCrust = new System.Windows.Forms.RadioButton();
             this.rbThinkCrust = new System.Windows.Forms.RadioButton();
+            this.gbCrustType = new System.Windows.Forms.GroupBox();
             this.gbSize.SuspendLayout();
+            this.gbCrustType.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMakeYourPizza
@@ -95,7 +97,7 @@
             // rbThinCrust
             // 
             this.rbThinCrust.AutoSize = true;
-            this.rbThinCrust.Location = new System.Drawing.Point(83, 329);
+            this.rbThinCrust.Location = new System.Drawing.Point(32, 42);
             this.rbThinCrust.Name = "rbThinCrust";
             this.rbThinCrust.Size = new System.Drawing.Size(87, 20);
             this.rbThinCrust.TabIndex = 10;
@@ -106,7 +108,7 @@
             // rbThinkCrust
             // 
             this.rbThinkCrust.AutoSize = true;
-            this.rbThinkCrust.Location = new System.Drawing.Point(83, 355);
+            this.rbThinkCrust.Location = new System.Drawing.Point(32, 80);
             this.rbThinkCrust.Name = "rbThinkCrust";
             this.rbThinkCrust.Size = new System.Drawing.Size(94, 20);
             this.rbThinkCrust.TabIndex = 11;
@@ -114,19 +116,31 @@
             this.rbThinkCrust.Text = "Think Crust";
             this.rbThinkCrust.UseVisualStyleBackColor = true;
             // 
+            // gbCrustType
+            // 
+            this.gbCrustType.Controls.Add(this.rbThinCrust);
+            this.gbCrustType.Controls.Add(this.rbThinkCrust);
+            this.gbCrustType.Location = new System.Drawing.Point(37, 276);
+            this.gbCrustType.Name = "gbCrustType";
+            this.gbCrustType.Size = new System.Drawing.Size(152, 146);
+            this.gbCrustType.TabIndex = 10;
+            this.gbCrustType.TabStop = false;
+            this.gbCrustType.Text = "Crust Type";
+            // 
             // Pizza_Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.rbThinkCrust);
-            this.Controls.Add(this.rbThinCrust);
+            this.Controls.Add(this.gbCrustType);
             this.Controls.Add(this.gbSize);
             this.Controls.Add(this.lblMakeYourPizza);
             this.Name = "Pizza_Order";
             this.Text = "Pizza Order";
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();
+            this.gbCrustType.ResumeLayout(false);
+            this.gbCrustType.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +154,6 @@
         private System.Windows.Forms.GroupBox gbSize;
         private System.Windows.Forms.RadioButton rbThinCrust;
         private System.Windows.Forms.RadioButton rbThinkCrust;
+        private System.Windows.Forms.GroupBox gbCrustType;
     }
 }
