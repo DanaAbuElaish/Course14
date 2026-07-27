@@ -17,6 +17,6 @@ namespace Course14
             InitializeComponent();
         }
 
-       
+        
     }
 }
