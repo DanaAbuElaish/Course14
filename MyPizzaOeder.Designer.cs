@@ -34,7 +34,7 @@
             this.radioButtonMeduim = new System.Windows.Forms.RadioButton();
             this.radioButtonSmall = new System.Windows.Forms.RadioButton();
             this.groupBoxCrustType = new System.Windows.Forms.GroupBox();
-            this.radioButtonThinkCrust = new System.Windows.Forms.RadioButton();
+            this.radioButtonThickCrust = new System.Windows.Forms.RadioButton();
             this.radioButtonThinCrust = new System.Windows.Forms.RadioButton();
             this.groupBoxWhereToEat = new System.Windows.Forms.GroupBox();
             this.radioButtonTakeOut = new System.Windows.Forms.RadioButton();
@@ -127,7 +127,7 @@
             // 
             // groupBoxCrustType
             // 
-            this.groupBoxCrustType.Controls.Add(this.radioButtonThinkCrust);
+            this.groupBoxCrustType.Controls.Add(this.radioButtonThickCrust);
             this.groupBoxCrustType.Controls.Add(this.radioButtonThinCrust);
             this.groupBoxCrustType.Location = new System.Drawing.Point(12, 297);
             this.groupBoxCrustType.Name = "groupBoxCrustType";
@@ -136,27 +136,27 @@
             this.groupBoxCrustType.TabStop = false;
             this.groupBoxCrustType.Text = "CrustType";
             // 
-            // radioButtonThinkCrust
+            // radioButtonThickCrust
             // 
-            this.radioButtonThinkCrust.AutoSize = true;
-            this.radioButtonThinkCrust.Location = new System.Drawing.Point(19, 74);
-            this.radioButtonThinkCrust.Name = "radioButtonThinkCrust";
-            this.radioButtonThinkCrust.Size = new System.Drawing.Size(91, 20);
-            this.radioButtonThinkCrust.TabIndex = 9;
-            this.radioButtonThinkCrust.TabStop = true;
-            this.radioButtonThinkCrust.Text = "ThinkCrust";
-            this.radioButtonThinkCrust.UseVisualStyleBackColor = true;
-            this.radioButtonThinkCrust.CheckedChanged += new System.EventHandler(this.radioButtonThinkCrust_CheckedChanged);
+            this.radioButtonThickCrust.AutoSize = true;
+            this.radioButtonThickCrust.Location = new System.Drawing.Point(19, 74);
+            this.radioButtonThickCrust.Name = "radioButtonThickCrust";
+            this.radioButtonThickCrust.Size = new System.Drawing.Size(94, 20);
+            this.radioButtonThickCrust.TabIndex = 9;
+            this.radioButtonThickCrust.TabStop = true;
+            this.radioButtonThickCrust.Text = "Thick Crust";
+            this.radioButtonThickCrust.UseVisualStyleBackColor = true;
+            this.radioButtonThickCrust.CheckedChanged += new System.EventHandler(this.radioButtonThinkCrust_CheckedChanged);
             // 
             // radioButtonThinCrust
             // 
             this.radioButtonThinCrust.AutoSize = true;
             this.radioButtonThinCrust.Location = new System.Drawing.Point(19, 35);
             this.radioButtonThinCrust.Name = "radioButtonThinCrust";
-            this.radioButtonThinCrust.Size = new System.Drawing.Size(84, 20);
+            this.radioButtonThinCrust.Size = new System.Drawing.Size(87, 20);
             this.radioButtonThinCrust.TabIndex = 8;
             this.radioButtonThinCrust.TabStop = true;
-            this.radioButtonThinCrust.Text = "ThinCrust";
+            this.radioButtonThinCrust.Text = "Thin Crust";
             this.radioButtonThinCrust.UseVisualStyleBackColor = true;
             this.radioButtonThinCrust.CheckedChanged += new System.EventHandler(this.radioButtonThinCrust_CheckedChanged);
             // 
@@ -453,7 +453,7 @@
         private System.Windows.Forms.RadioButton radioButtonMeduim;
         private System.Windows.Forms.RadioButton radioButtonSmall;
         private System.Windows.Forms.GroupBox groupBoxCrustType;
-        private System.Windows.Forms.RadioButton radioButtonThinkCrust;
+        private System.Windows.Forms.RadioButton radioButtonThickCrust;
         private System.Windows.Forms.RadioButton radioButtonThinCrust;
         private System.Windows.Forms.GroupBox groupBoxWhereToEat;
         private System.Windows.Forms.RadioButton radioButtonTakeOut;

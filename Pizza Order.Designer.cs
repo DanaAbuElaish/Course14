@@ -49,6 +49,8 @@
             this.btnOrderPizza = new System.Windows.Forms.Button();
             this.btnEsetForm = new System.Windows.Forms.Button();
             this.groupBoxOrderSummary = new System.Windows.Forms.GroupBox();
+            this.lblTotalPriceOnOrderSummary = new System.Windows.Forms.Label();
+            this.lblTotalPrice = new System.Windows.Forms.Label();
             this.lblToppingsOnOrderSummary = new System.Windows.Forms.Label();
             this.lblWhereToEatOnOrderSummary = new System.Windows.Forms.Label();
             this.lblCrustTypeOnOrderSummary = new System.Windows.Forms.Label();
@@ -57,8 +59,6 @@
             this.lblCrustType = new System.Windows.Forms.Label();
             this.lblToppings = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
-            this.lblTotalPrice = new System.Windows.Forms.Label();
-            this.lblTotalPriceOnOrderSummary = new System.Windows.Forms.Label();
             this.groupBoxSize.SuspendLayout();
             this.groupBoxCrustType.SuspendLayout();
             this.groupBoxToppings.SuspendLayout();
@@ -75,7 +75,7 @@
             this.lblMakeYourPizza.Name = "lblMakeYourPizza";
             this.lblMakeYourPizza.Size = new System.Drawing.Size(546, 69);
             this.lblMakeYourPizza.TabIndex = 3;
-            this.lblMakeYourPizza.Text = "Make Your Pizza";
+            this.lblMakeYourPizza.Text = "Make Your Pizza\r\n";
             // 
             // rbSmall
             // 
@@ -317,6 +317,26 @@
             this.groupBoxOrderSummary.Text = "Order Summary";
             this.groupBoxOrderSummary.Enter += new System.EventHandler(this.groupBoxOrderSummary_Enter);
             // 
+            // lblTotalPriceOnOrderSummary
+            // 
+            this.lblTotalPriceOnOrderSummary.AutoSize = true;
+            this.lblTotalPriceOnOrderSummary.Font = new System.Drawing.Font("Segoe Print", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalPriceOnOrderSummary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.lblTotalPriceOnOrderSummary.Location = new System.Drawing.Point(126, 187);
+            this.lblTotalPriceOnOrderSummary.Name = "lblTotalPriceOnOrderSummary";
+            this.lblTotalPriceOnOrderSummary.Size = new System.Drawing.Size(48, 65);
+            this.lblTotalPriceOnOrderSummary.TabIndex = 33;
+            this.lblTotalPriceOnOrderSummary.Text = "$";
+            // 
+            // lblTotalPrice
+            // 
+            this.lblTotalPrice.AutoSize = true;
+            this.lblTotalPrice.Location = new System.Drawing.Point(25, 187);
+            this.lblTotalPrice.Name = "lblTotalPrice";
+            this.lblTotalPrice.Size = new System.Drawing.Size(95, 16);
+            this.lblTotalPrice.TabIndex = 37;
+            this.lblTotalPrice.Text = "Total Price : ";
+            // 
             // lblToppingsOnOrderSummary
             // 
             this.lblToppingsOnOrderSummary.AutoSize = true;
@@ -395,26 +415,6 @@
             this.lblSize.Size = new System.Drawing.Size(49, 16);
             this.lblSize.TabIndex = 32;
             this.lblSize.Text = "Size : ";
-            // 
-            // lblTotalPrice
-            // 
-            this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Location = new System.Drawing.Point(25, 187);
-            this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(95, 16);
-            this.lblTotalPrice.TabIndex = 37;
-            this.lblTotalPrice.Text = "Total Price : ";
-            // 
-            // lblTotalPriceOnOrderSummary
-            // 
-            this.lblTotalPriceOnOrderSummary.AutoSize = true;
-            this.lblTotalPriceOnOrderSummary.Font = new System.Drawing.Font("Segoe Print", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalPriceOnOrderSummary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.lblTotalPriceOnOrderSummary.Location = new System.Drawing.Point(126, 187);
-            this.lblTotalPriceOnOrderSummary.Name = "lblTotalPriceOnOrderSummary";
-            this.lblTotalPriceOnOrderSummary.Size = new System.Drawing.Size(48, 65);
-            this.lblTotalPriceOnOrderSummary.TabIndex = 33;
-            this.lblTotalPriceOnOrderSummary.Text = "$";
             // 
             // Pizza_Order
             // 

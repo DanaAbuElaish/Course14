@@ -53,9 +53,9 @@ namespace Course14
         }
         private void radioButtonThinkCrust_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonThinkCrust.Checked)
+            if (radioButtonThickCrust.Checked)
             {
-                labelAnswerForCrustTypeOnOrderSummary.Text = radioButtonThinkCrust.Text;
+                labelAnswerForCrustTypeOnOrderSummary.Text = radioButtonThickCrust.Text;
                 CalculateTotalPrice();
             }
 
@@ -179,7 +179,7 @@ namespace Course14
                 price += 5;
             }
 
-             else if (radioButtonThinkCrust.Checked)
+             else if (radioButtonThickCrust.Checked)
             {
                 price += 10;
             }
