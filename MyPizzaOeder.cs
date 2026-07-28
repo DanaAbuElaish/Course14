@@ -68,32 +68,39 @@ namespace Course14
 
             if (checkBoxExtraCheese.Checked)
             {
-                toppings += checkBoxExtraCheese.Text + " , ";
+                toppings += checkBoxExtraCheese.Text;
             }
 
             if (checkBoxOnion.Checked)
             {
-                toppings += checkBoxOnion.Text + " , ";
+                toppings += " , " + checkBoxOnion.Text;
             }
 
             if (checkBoxMushrooms.Checked)
             {
-                toppings += checkBoxMushrooms.Text + " , ";
+                toppings += " , " + checkBoxMushrooms.Text;
             }
 
             if (checkBoxOlives.Checked)
             {
-                toppings += checkBoxOlives.Text + " , ";
+                toppings += " , " + checkBoxOlives.Text;
             }
 
             if (checkBoxTomatoes.Checked)
             {
-                toppings += checkBoxTomatoes.Text + " , ";
+                toppings += " , " + checkBoxTomatoes.Text;
             }
 
             if (checkBoxGreenPeppers.Checked)
             {
-                toppings += checkBoxGreenPeppers.Text;
+                toppings += " , " + checkBoxGreenPeppers.Text;
+            }
+
+            
+
+            if(toppings == "")
+            {
+                toppings = "No Toppings";
             }
 
             labelAnswerForToppingsOnOrderSummary.Text = toppings;
@@ -243,4 +250,5 @@ namespace Course14
             buttonOrderPizza.Enabled = true;
         }
     }
+
 }

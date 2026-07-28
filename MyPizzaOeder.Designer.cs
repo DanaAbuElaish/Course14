@@ -104,6 +104,7 @@
             // radioButtonMeduim
             // 
             this.radioButtonMeduim.AutoSize = true;
+            this.radioButtonMeduim.Enabled = false;
             this.radioButtonMeduim.Location = new System.Drawing.Point(19, 71);
             this.radioButtonMeduim.Name = "radioButtonMeduim";
             this.radioButtonMeduim.Size = new System.Drawing.Size(76, 20);
@@ -362,9 +363,9 @@
             this.labelAnswerForSizeOnOrderSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAnswerForSizeOnOrderSummary.Location = new System.Drawing.Point(93, 49);
             this.labelAnswerForSizeOnOrderSummary.Name = "labelAnswerForSizeOnOrderSummary";
-            this.labelAnswerForSizeOnOrderSummary.Size = new System.Drawing.Size(220, 16);
+            this.labelAnswerForSizeOnOrderSummary.Size = new System.Drawing.Size(55, 16);
             this.labelAnswerForSizeOnOrderSummary.TabIndex = 36;
-            this.labelAnswerForSizeOnOrderSummary.Text = "Answer For Size On Order Summary";
+            this.labelAnswerForSizeOnOrderSummary.Text = "Meduim";
             // 
             // labelTotalPrice
             // 

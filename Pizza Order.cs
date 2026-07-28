@@ -36,6 +36,7 @@ namespace Course14
                 groupBoxCrustType.Enabled = false;
                 groupBoxToppings.Enabled = false;
                 groupBoxWhereToEat.Enabled = false;
+                btnOrderPizza.Enabled = false;
             }
         }
 
