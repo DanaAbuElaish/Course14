@@ -52,5 +52,12 @@ namespace Course14
             frm1.ShowDialog();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Form frm1 = new frmPictureBox();
+            frm1.ShowDialog();
+        }
     }
 }

@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPictureBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPictureBox.Designer.cs">
+      <DependentUpon>frmPictureBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTextBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPictureBox.resx">
+      <DependentUpon>frmPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTextBox.resx">
       <DependentUpon>frmTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +128,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -132,6 +142,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dana.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dana1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Passportجواز السفر.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrongMan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WeakMan.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
