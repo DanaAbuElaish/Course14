@@ -16,7 +16,7 @@ namespace Course14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PictureBoxExerxise());
+            Application.Run(new Form2());
         }
     }
 }
