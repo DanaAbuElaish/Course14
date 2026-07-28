@@ -58,6 +58,7 @@
             this.radioButtonBoy.TabStop = true;
             this.radioButtonBoy.Text = "Boy";
             this.radioButtonBoy.UseVisualStyleBackColor = true;
+            this.radioButtonBoy.CheckedChanged += new System.EventHandler(this.radioButtonBoy_CheckedChanged);
             // 
             // radioButtonGirl
             // 
@@ -69,6 +70,7 @@
             this.radioButtonGirl.TabStop = true;
             this.radioButtonGirl.Text = "Girl";
             this.radioButtonGirl.UseVisualStyleBackColor = true;
+            this.radioButtonGirl.CheckedChanged += new System.EventHandler(this.radioButtonGirl_CheckedChanged);
             // 
             // radioButtonBook
             // 
@@ -80,6 +82,7 @@
             this.radioButtonBook.TabStop = true;
             this.radioButtonBook.Text = "Book";
             this.radioButtonBook.UseVisualStyleBackColor = true;
+            this.radioButtonBook.CheckedChanged += new System.EventHandler(this.radioButtonBook_CheckedChanged);
             // 
             // radioButtonPen
             // 
@@ -91,12 +94,15 @@
             this.radioButtonPen.TabStop = true;
             this.radioButtonPen.Text = "Pen";
             this.radioButtonPen.UseVisualStyleBackColor = true;
+            this.radioButtonPen.CheckedChanged += new System.EventHandler(this.radioButtonPen_CheckedChanged);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::Course14.Properties.Resources.Boy;
             this.pictureBox1.Location = new System.Drawing.Point(202, 95);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(435, 263);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
