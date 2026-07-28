@@ -21,21 +21,47 @@ namespace Course14
         private void radioButtonBoy_CheckedChanged(object sender, EventArgs e)
         {
             pictureBox1.Image = Resources.Boy;
+            UpdateTitle();
         }
 
         private void radioButtonGirl_CheckedChanged(object sender, EventArgs e)
         {
             pictureBox1.Image = Resources.Girl;
+            UpdateTitle();
         }
 
         private void radioButtonBook_CheckedChanged(object sender, EventArgs e)
         {
             pictureBox1.Image = Resources.Book;
+            UpdateTitle();
         }
 
         private void radioButtonPen_CheckedChanged(object sender, EventArgs e)
         {
             pictureBox1.Image = Resources.Pen;
+            UpdateTitle();
         }
+
+       
+        private void UpdateTitle()
+        {
+            if (radioButtonBoy.Checked)
+            {
+                labelTitle.Text = radioButtonBoy.Text;
+            }
+            if (radioButtonGirl.Checked)
+            {
+                labelTitle.Text = radioButtonGirl.Text;
+            }
+            if (radioButtonBook.Checked)
+            {
+                labelTitle.Text = radioButtonBook.Text;
+            }
+            if (radioButtonPen.Checked)
+            {
+                labelTitle.Text = radioButtonPen.Text;
+            }
+        }
+
     }
 }
