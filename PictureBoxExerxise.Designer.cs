@@ -56,6 +56,7 @@
             this.radioButtonBoy.Size = new System.Drawing.Size(52, 20);
             this.radioButtonBoy.TabIndex = 1;
             this.radioButtonBoy.TabStop = true;
+            this.radioButtonBoy.Tag = "Boy";
             this.radioButtonBoy.Text = "Boy";
             this.radioButtonBoy.UseVisualStyleBackColor = true;
             this.radioButtonBoy.CheckedChanged += new System.EventHandler(this.radioButtonBoy_CheckedChanged);
@@ -68,6 +69,7 @@
             this.radioButtonGirl.Size = new System.Drawing.Size(48, 20);
             this.radioButtonGirl.TabIndex = 2;
             this.radioButtonGirl.TabStop = true;
+            this.radioButtonGirl.Tag = "Girl";
             this.radioButtonGirl.Text = "Girl";
             this.radioButtonGirl.UseVisualStyleBackColor = true;
             this.radioButtonGirl.CheckedChanged += new System.EventHandler(this.radioButtonGirl_CheckedChanged);
@@ -80,6 +82,7 @@
             this.radioButtonBook.Size = new System.Drawing.Size(60, 20);
             this.radioButtonBook.TabIndex = 3;
             this.radioButtonBook.TabStop = true;
+            this.radioButtonBook.Tag = "Book";
             this.radioButtonBook.Text = "Book";
             this.radioButtonBook.UseVisualStyleBackColor = true;
             this.radioButtonBook.CheckedChanged += new System.EventHandler(this.radioButtonBook_CheckedChanged);
@@ -92,6 +95,7 @@
             this.radioButtonPen.Size = new System.Drawing.Size(52, 20);
             this.radioButtonPen.TabIndex = 4;
             this.radioButtonPen.TabStop = true;
+            this.radioButtonPen.Tag = "Pen";
             this.radioButtonPen.Text = "Pen";
             this.radioButtonPen.UseVisualStyleBackColor = true;
             this.radioButtonPen.CheckedChanged += new System.EventHandler(this.radioButtonPen_CheckedChanged);
