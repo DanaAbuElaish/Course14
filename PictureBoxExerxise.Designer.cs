@@ -33,6 +33,8 @@
             this.radioButtonGirl = new System.Windows.Forms.RadioButton();
             this.radioButtonBook = new System.Windows.Forms.RadioButton();
             this.radioButtonPen = new System.Windows.Forms.RadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -90,11 +92,20 @@
             this.radioButtonPen.Text = "Pen";
             this.radioButtonPen.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(202, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(435, 263);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // PictureBoxExerxise
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 495);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButtonPen);
             this.Controls.Add(this.radioButtonBook);
             this.Controls.Add(this.radioButtonGirl);
@@ -102,6 +113,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "PictureBoxExerxise";
             this.Text = "PictureBoxExerxise";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +126,6 @@
         private System.Windows.Forms.RadioButton radioButtonGirl;
         private System.Windows.Forms.RadioButton radioButtonBook;
         private System.Windows.Forms.RadioButton radioButtonPen;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
