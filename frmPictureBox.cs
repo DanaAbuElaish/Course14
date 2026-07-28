@@ -27,5 +27,10 @@ namespace Course14
         {
             pictureBox1.Image = Resources.StrongMan;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile(@"C:\Flowers.jpg");
+        }
     }
 }
