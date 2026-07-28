@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTextBox.Designer.cs">
+      <DependentUpon>frmTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyPizzaOeder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTextBox.resx">
+      <DependentUpon>frmTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyPizzaOeder.resx">
       <DependentUpon>MyPizzaOeder.cs</DependentUpon>

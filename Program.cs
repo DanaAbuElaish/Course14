@@ -16,7 +16,7 @@ namespace Course14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pizza_Order());
+            Application.Run(new frmMain());
         }
     }
 }

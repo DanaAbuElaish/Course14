@@ -45,5 +45,12 @@ namespace Course14
             Form frm1 = new frmChkRadioGroup();
             frm1.ShowDialog();
         }
+
+        private void buttonMoreAboutTextBox_Click(object sender, EventArgs e)
+        {
+            Form frm1 = new frmTextBox();
+            frm1.ShowDialog();
+
+        }
     }
 }
