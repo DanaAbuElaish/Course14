@@ -30,11 +30,21 @@ namespace Course14
             X,
             O
         }
+        
+        enum enGameStatus
+        {
+            InProgress,
+            Player1Won,
+            Player2Won,
+            Draw
+        }
 
         enCellState[] board = new enCellState[10];
         enPlayers currentPlayer;
+        enGameStatus gameStatus;
 
-        private void PlayMove(byte cellNumber)
+
+        private bool PlayMove(byte cellNumber)
         {
 
             enCellState currentCell = board[cellNumber];
@@ -52,15 +62,27 @@ namespace Course14
                 }
                 if (CheckWinner())
                 {
-                    return;
+                    if (currentPlayer == enPlayers.player1)
+                    {
+                        gameStatus = enGameStatus.Player1Won;
+                        labelInProgress.Text = "Player 1";
+                    }
+                    else { 
+                        gameStatus = enGameStatus.Player2Won;
+                        labelInProgress.Text = "Player 2";
+                    }
+
+                    return true;
                 }
                 if (CheckDraw())
                 {
-                    return;
+                   gameStatus = enGameStatus.Draw;
+
+                    return true;
                 }
                 SwitchPlayer();
             }
-
+            return false;
             
         }
 
@@ -70,9 +92,12 @@ namespace Course14
             if (currentPlayer == enPlayers.player1)
             {
                 currentPlayer = enPlayers.player2;
-            }else
+                labelTurnName.Text = "Player 2";
+            }
+            else
             {
                 currentPlayer=enPlayers.player1;
+                labelTurnName.Text = "Player 1";
             }
         }
 
@@ -141,8 +166,23 @@ namespace Course14
             e.Graphics.DrawLine(pen, 350, 100, 350, 450);
         }
 
-      
+        private void button_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
 
-       
+            byte tag = Convert.ToByte(btn.Tag);
+
+            if (PlayMove(tag))
+            {
+                enCellState cellState = board[tag];
+                if (cellState == enCellState.X)
+                {
+                    btn.BackgroundImage = Properties.Resources.X;
+                }else
+                {
+                    BackgroundImage = Properties.Resources.O;
+                }
+            }
+        }
     }
 }
