@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,10 @@ namespace Course14
                     board[cellNumber] = enCellState.O;
                 }
                 if (CheckWinner())
+                {
+                    return;
+                }
+                if (CheckDraw())
                 {
                     return;
                 }
@@ -110,7 +115,16 @@ namespace Course14
             return false;
         }
 
-        
+        private bool CheckDraw()
+        {
+            if (board[1]!=enCellState.Empty && board[2] != enCellState.Empty && board[3] != enCellState.Empty && board[4] != enCellState.Empty && board[5] != enCellState.Empty&& board[6] != enCellState.Empty&& board[7] != enCellState.Empty&& board[8] != enCellState.Empty&& board[9] != enCellState.Empty)
+            
+                return true;
+               else
+                return false;
+        }
+
+
         private void Tic_Tac_Toe_Game__Paint(object sender, PaintEventArgs e)
         {
             Color White = Color.FromArgb(255, 255, 255, 255);
