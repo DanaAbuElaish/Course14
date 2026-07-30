@@ -180,7 +180,7 @@ namespace Course14
                     btn.BackgroundImage = Properties.Resources.X;
                 }else
                 {
-                    BackgroundImage = Properties.Resources.O;
+                    btn.BackgroundImage = Properties.Resources.O;
                 }
             }
         }
