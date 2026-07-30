@@ -46,11 +46,19 @@ namespace Course14
 
         private bool PlayMove(byte cellNumber)
         {
+            
+            if (gameStatus != enGameStatus.InProgress) {
+                return false;
+            }
 
             enCellState currentCell = board[cellNumber];
-
-            if (currentCell == enCellState.Empty)
+            if (currentCell != enCellState.Empty)
             {
+                MessageBox.Show("Wrong Choice","Wrong",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            
                 if (currentPlayer == enPlayers.player1)
                 {
                     board[cellNumber] = enCellState.X;
@@ -60,29 +68,32 @@ namespace Course14
                 {
                     board[cellNumber] = enCellState.O;
                 }
-                if (CheckWinner())
+            if (CheckWinner())
+            {
+                if (currentPlayer == enPlayers.player1)
                 {
-                    if (currentPlayer == enPlayers.player1)
-                    {
-                        gameStatus = enGameStatus.Player1Won;
-                        labelInProgress.Text = "Player 1";
-                    }
-                    else { 
-                        gameStatus = enGameStatus.Player2Won;
-                        labelInProgress.Text = "Player 2";
-                    }
+                    gameStatus = enGameStatus.Player1Won;
+                    labelInProgress.Text = "Player 1";
+                   
 
-                    return true;
                 }
-                if (CheckDraw())
+                else
                 {
-                   gameStatus = enGameStatus.Draw;
-
-                    return true;
+                    gameStatus = enGameStatus.Player2Won;
+                    labelInProgress.Text = "Player 2";
                 }
+                return true;
+            }
+            else if (CheckDraw())
+            {
+                gameStatus = enGameStatus.Draw;
+                labelInProgress.Text = "Draw";
+            }
+            else
+            {
                 SwitchPlayer();
             }
-            return false;
+            return true;
             
         }
 
@@ -106,34 +117,58 @@ namespace Course14
         {
             if (board[1]!=enCellState.Empty && board[1] == board[2] && board[2] == board[3])
             {
+                button1.BackColor = Color.FromArgb(57, 255, 20);
+                button2.BackColor = Color.FromArgb(57, 255, 20);
+                button3.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[4] != enCellState.Empty && board[4] == board[5] && board[5] == board[6])
             {
+                button4.BackColor = Color.FromArgb(57, 255, 20);
+                button5.BackColor = Color.FromArgb(57, 255, 20);
+                button6.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[7] != enCellState.Empty && board[7] == board[8] && board[8] == board[9])
             {
+                button7.BackColor =Color.FromArgb(57, 255, 20);
+                button8.BackColor =Color.FromArgb(57, 255, 20);
+                button9.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[1] != enCellState.Empty && board[1] == board[5] && board[5] == board[9])
             {
+                button1.BackColor = Color.FromArgb(57, 255, 20);
+                button5.BackColor = Color.FromArgb(57, 255, 20);
+                button9.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[3] != enCellState.Empty && board[3] == board[5] && board[5] == board[7])
             {
+                button3.BackColor = Color.FromArgb(57, 255, 20);
+                button5.BackColor = Color.FromArgb(57, 255, 20);
+                button7.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[1] != enCellState.Empty && board[1] == board[4] && board[4] == board[7])
             {
+                button1.BackColor = Color.FromArgb(57, 255, 20);
+                button4.BackColor = Color.FromArgb(57, 255, 20);
+                button7.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[2] != enCellState.Empty && board[2] == board[5] && board[5] == board[8])
             {
+                button2.BackColor = Color.FromArgb(57, 255, 20);
+                button5.BackColor = Color.FromArgb(57, 255, 20);
+                button8.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
             if (board[3] != enCellState.Empty && board[3] == board[6] && board[6] == board[9])
             {
+                button3.BackColor = Color.FromArgb(57, 255, 20);
+                button6.BackColor = Color.FromArgb(57, 255, 20);
+                button9.BackColor = Color.FromArgb(57, 255, 20);
                 return true;
             }
 
@@ -182,7 +217,58 @@ namespace Course14
                 {
                     btn.BackgroundImage = Properties.Resources.O;
                 }
+
+                if (gameStatus == enGameStatus.Player1Won || gameStatus == enGameStatus.Player2Won)
+                {
+                    MessageBox.Show("Game Over", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                }
+                else if (gameStatus == enGameStatus.Draw)
+                {
+                    MessageBox.Show("Game Over", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                
+                }
+
             }
+        }
+
+        private void InitializeGame()
+        {
+            currentPlayer = enPlayers.player1;
+            gameStatus = enGameStatus.InProgress;
+           
+
+            for(byte i = 1; i< board.Length; i++)
+            {
+                board[i] = enCellState.Empty;
+            }
+            labelTurnName.Text = "Player 1";
+
+            button1.BackgroundImage = Properties.Resources.question_mark_96;
+            button2.BackgroundImage = Properties.Resources.question_mark_96;
+            button3.BackgroundImage = Properties.Resources.question_mark_96;
+            button4.BackgroundImage = Properties.Resources.question_mark_96;
+            button5.BackgroundImage = Properties.Resources.question_mark_96;
+            button6.BackgroundImage = Properties.Resources.question_mark_96;
+            button7.BackgroundImage = Properties.Resources.question_mark_96;
+            button8.BackgroundImage = Properties.Resources.question_mark_96;
+            button9.BackgroundImage = Properties.Resources.question_mark_96;
+
+            button1.BackColor = Color.Black;
+            button2.BackColor = Color.Black;
+            button3.BackColor = Color.Black;
+            button4.BackColor = Color.Black;
+            button5.BackColor = Color.Black;
+            button6.BackColor = Color.Black;
+            button7.BackColor = Color.Black;
+            button8.BackColor = Color.Black;
+            button9.BackColor = Color.Black;
+
+            labelInProgress.Text = "In Progress";
+        }
+
+        private void buttonRestart_Click(object sender, EventArgs e)
+        {
+            InitializeGame();
         }
     }
 }
