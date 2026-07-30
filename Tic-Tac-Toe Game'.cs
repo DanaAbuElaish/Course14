@@ -17,10 +17,43 @@ namespace Course14
             InitializeComponent();
         }
 
-        private void Tic_Tac_Toe_Game_Paint(object sender, PaintEventArgs e)
+        enum enPlayers
         {
-            }
+            player1 ,
+            player2 
+        }
 
+        enum enCellState
+        {
+            Empty,
+            X,
+            O
+        }
+
+        enCellState[] board = new enCellState[10];
+        enPlayers currentPlayer;
+
+        private void PlayMove(byte cellNumber)
+        {
+
+            enCellState currentCell = board[cellNumber];
+
+            if (currentCell == enCellState.Empty)
+            {
+                if (currentPlayer == enPlayers.player1)
+                {
+                    board[cellNumber] = enCellState.X;
+                }
+
+                else
+                {
+                    board[cellNumber] = enCellState.O;
+                }
+            }
+        }
+
+
+        
         private void Tic_Tac_Toe_Game__Paint(object sender, PaintEventArgs e)
         {
             Color White = Color.FromArgb(255, 255, 255, 255);
@@ -37,11 +70,7 @@ namespace Course14
             e.Graphics.DrawLine(pen, 350, 100, 350, 450);
         }
 
-        private void buttonRestart_Click(object sender, EventArgs e)
-        {
-
-        }
-       
+      
 
        
     }
