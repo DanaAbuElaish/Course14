@@ -78,7 +78,7 @@
             this.labelTurnName.Name = "labelTurnName";
             this.labelTurnName.Size = new System.Drawing.Size(179, 72);
             this.labelTurnName.TabIndex = 11;
-            this.labelTurnName.Text = "Palyer 1";
+            this.labelTurnName.Text = "Player 1";
             // 
             // labelWinner
             // 
