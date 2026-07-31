@@ -171,15 +171,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dana.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dana1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Passportجواز السفر.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\StrongMan.png" />
   </ItemGroup>
   <ItemGroup>

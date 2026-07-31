@@ -104,13 +104,15 @@
             // 
             // buttonRestart
             // 
-            this.buttonRestart.Font = new System.Drawing.Font("MS Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRestart.Location = new System.Drawing.Point(723, 465);
+            this.buttonRestart.BackColor = System.Drawing.Color.Black;
+            this.buttonRestart.Font = new System.Drawing.Font("Haettenschweiler", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonRestart.ForeColor = System.Drawing.Color.Transparent;
+            this.buttonRestart.Location = new System.Drawing.Point(748, 465);
             this.buttonRestart.Name = "buttonRestart";
             this.buttonRestart.Size = new System.Drawing.Size(218, 76);
             this.buttonRestart.TabIndex = 14;
             this.buttonRestart.Text = "Restart Game";
-            this.buttonRestart.UseVisualStyleBackColor = true;
+            this.buttonRestart.UseVisualStyleBackColor = false;
             this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
             // 
             // labelInProgress

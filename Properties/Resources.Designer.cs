@@ -83,26 +83,6 @@ namespace Course14.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Dana {
-            get {
-                object obj = ResourceManager.GetObject("Dana", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Dana1 {
-            get {
-                object obj = ResourceManager.GetObject("Dana1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Girl {
             get {
                 object obj = ResourceManager.GetObject("Girl", resourceCulture);
@@ -116,16 +96,6 @@ namespace Course14.Properties {
         internal static System.Drawing.Bitmap O {
             get {
                 object obj = ResourceManager.GetObject("O", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Passportجواز_السفر {
-            get {
-                object obj = ResourceManager.GetObject("Passportجواز السفر", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
