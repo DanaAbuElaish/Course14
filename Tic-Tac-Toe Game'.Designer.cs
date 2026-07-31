@@ -120,9 +120,9 @@
             this.labelInProgress.ForeColor = System.Drawing.Color.Lime;
             this.labelInProgress.Location = new System.Drawing.Point(760, 355);
             this.labelInProgress.Name = "labelInProgress";
-            this.labelInProgress.Size = new System.Drawing.Size(210, 72);
+            this.labelInProgress.Size = new System.Drawing.Size(232, 72);
             this.labelInProgress.TabIndex = 15;
-            this.labelInProgress.Text = "In Prgress";
+            this.labelInProgress.Text = "In Progress";
             // 
             // button1
             // 
