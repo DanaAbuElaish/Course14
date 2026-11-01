@@ -288,6 +288,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "Tic_Tac_Toe_Game_";
             this.Text = "Tic_Tac_Toe_Game_";
+//            this.Load += new System.EventHandler(this.Tic_Tac_Toe_Game__Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Tic_Tac_Toe_Game__Paint);
             this.ResumeLayout(false);
             this.PerformLayout();

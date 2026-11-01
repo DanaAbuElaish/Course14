@@ -16,7 +16,7 @@ namespace Course14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tic_Tac_Toe_Game_());
+            Application.Run(new My_Tic_Tac_Toe_Game());
         }
     }
 }
